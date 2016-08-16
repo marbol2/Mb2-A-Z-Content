@@ -1,0 +1,87 @@
+/**
+ * @package		Mb2 A-Z Content
+ * @version		1.1.0
+ * @author		Mariusz Boloz (http://mb2extensions.com)
+ * @copyright	Copyright (C) 2016 Mariusz Boloz (http://mb2extensions.com). All rights reserved
+ * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
+**/
+
+
+
+/*--------------------------------------------------------------*/
+/*	General styles
+/*--------------------------------------------------------------*/
+
+.mb2az *,
+.mb2az *:before,
+.mb2az *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;	
+}
+
+.mb2az {
+	position:relative;
+}
+
+
+
+
+/*--------------------------------------------------------------*/
+/*	Alphabet list
+/*--------------------------------------------------------------*/
+
+.mb2az-layout-default .mb2az-alphabet {
+	list-style: none;
+	margin: 0 0 30px 0;
+	padding: 0;	
+}
+
+.mb2az-layout-default .mb2az-alphabet li {
+	display: inline-block;	
+	margin: 0;
+	padding: 0 10px;
+	border-right: dotted 1px #d4d5d6;
+}
+
+.mb2az-layout-default .mb2az-alphabet li:last-child {
+	border-right: 0;	
+}
+
+.mb2az-layout-default .mb2az-alphabet li > span {
+	opacity: .4;	
+}
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/*	Articles list
+/*--------------------------------------------------------------*/
+
+.mb2az-articles,
+.mb2az-articles ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;		
+}
+
+.mb2az-articles > li {
+	margin-bottom: 30px;	
+}
+
+li.mb2az-letter-item {
+	border-top: dotted 1px #d4d5d6;
+	padding-top: 15px;	
+	position: relative;
+}
+
+
+/* Back to top link */
+
+.mb2az-back {
+	position: absolute;
+	right: 0;
+	top: 15px;	
+}
