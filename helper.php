@@ -1,7 +1,7 @@
 <?php
 /**
  * @package		Mb2 A-Z Content
- * @version		1.1.0
+ * @version		1.1.1
  * @author		Mariusz Boloz (http://mb2extensions.com)
  * @copyright	Copyright (C) 2016 Mariusz Boloz (http://mb2extensions.com). All rights reserved
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
@@ -382,6 +382,14 @@ abstract class ModMb2azcontentHelper
 		// Get jquery framework
 		JHtml::_('jquery.framework');
 			
+				
+		// Get 'jquery.nav' script
+		if ($params->get('modlayout','default') === 'default' && $params->get('scroll',1) == 1 && !ModMb2azcontentHelper::isDeclaration('jquery.scrollTo.min.js'))
+		{			
+			$doc->addScript(JURI::base(true) . '/media/mb2azcontent/js/jquery.scrollTo.min.js');					
+		}
+		
+		
 		if (file_exists(JPATH_THEMES . '/' . $app->getTemplate() . '/js/mb2azcontent.js'))
 		{
 			$doc->addScript(JURI::base(true) . '/templates/' . $app->getTemplate() . '/js/mb2azcontent.js');
@@ -390,16 +398,6 @@ abstract class ModMb2azcontentHelper
 		{
 			$doc->addScript(JURI::base(true) . '/media/mb2azcontent/js/mb2azcontent.js');	
 		}
-				
-		
-		// Get 'jquery.nav' script
-		if ($params->get('modlayout','default') === 'default' && $params->get('scroll',1) == 1 && !ModMb2azcontentHelper::isDeclaration('jquery.scrollTo.min.js'))
-		{			
-			$doc->addScript(JURI::base(true) . '/media/mb2azcontent/js/jquery.scrollTo.min.js');					
-		}
-		
-		
-			
 	
 		
 		

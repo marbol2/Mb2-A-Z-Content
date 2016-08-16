@@ -1,6 +1,6 @@
 /**
  * @package		Mb2 A-Z Content
- * @version		1.1.0
+ * @version		1.1.1
  * @author		Mariusz Boloz (http://mb2extensions.com)
  * @copyright	Copyright (C) 2016 Mariusz Boloz (http://mb2extensions.com). All rights reserved
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
